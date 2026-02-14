@@ -3,13 +3,17 @@
 <head>
     <title>My Site</title>
     <script src="https://unpkg.com/htmx.org"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
 
-<nav>
+<nav class="flex gap-4">
     <a hx-get="/" hx-target="#content" hx-push-url="true">Home</a>
     <a hx-get="/about" hx-target="#content" hx-push-url="true">About</a>
+    <a hx-get="/projects" hx-target="#content" hx-push-url="true">Projects</a>
+    <a hx-get="/blog" hx-target="#content" hx-push-url="true">Blog</a>
+    <a hx-get="/games" hx-target="#content" hx-push-url="true">Games</a>
 </nav>
 
 <div id="content">
